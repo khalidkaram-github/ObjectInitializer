@@ -7,7 +7,10 @@
 
             #region By Constructor
 
-            var myCar = new Car();
+            Car myCar = new();
+
+
+
             myCar.Make = "Ford";
             myCar.Model = "Mustang";
             myCar.Engine = new Engine();
@@ -22,7 +25,7 @@
             //    Make = "Ford",
             //    Model = "Mustang",
             //    Engine = new Engine { HorsePower = 450 }
-            //}; 
+            //};
             #endregion
 
         }
