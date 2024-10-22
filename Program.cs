@@ -4,12 +4,26 @@
     {
         static void Main(string[] args)
         {
-            var myCar = new Car
-            {
-                Make = "Ford",
-                Model = "Mustang",
-                Engine = new Engine { HorsePower = 450 }
-            };
+
+            #region By Constructor
+
+            var myCar = new Car();
+            myCar.Make = "Ford";
+            myCar.Model = "Mustang";
+            myCar.Engine = new Engine();
+            myCar.Engine.HorsePower = 450;
+
+            #endregion
+
+            #region By ObjectInitializer
+
+            //var myCar = new Car
+            //{
+            //    Make = "Ford",
+            //    Model = "Mustang",
+            //    Engine = new Engine { HorsePower = 450 }
+            //}; 
+            #endregion
 
         }
     }
